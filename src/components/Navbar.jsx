@@ -57,8 +57,8 @@ const Navbar = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-            ? 'glass-strong shadow-lg shadow-primary-500/5'
-            : 'bg-transparent'
+          ? 'glass-strong shadow-lg shadow-primary-500/5'
+          : 'bg-transparent'
           }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -82,8 +82,8 @@ const Navbar = () => {
                   href={link.href}
                   onClick={(e) => handleClick(e, link.href)}
                   className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 ${activeSection === link.href.replace('#', '')
-                      ? 'text-primary-400'
-                      : 'text-gray-300 hover:text-white'
+                    ? 'text-primary-400'
+                    : 'text-gray-300 hover:text-white'
                     }`}
                   whileHover={{ y: -2 }}
                 >
@@ -114,7 +114,8 @@ const Navbar = () => {
 
               {/* Mobile: Download CV visible */}
               <motion.a
-                href="#"
+                href={resume}
+                download="Mohammed_Mafaz_CV.pdf"
                 className="sm:hidden flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-lg border border-primary-500/40 text-primary-300"
                 whileTap={{ scale: 0.95 }}
               >
@@ -168,8 +169,8 @@ const Navbar = () => {
                       animate={{ x: 0, opacity: 1 }}
                       transition={{ delay: i * 0.1 }}
                       className={`flex items-center gap-3 px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 ${activeSection === link.href.replace('#', '')
-                          ? 'bg-primary-500/15 text-primary-400 border border-primary-500/30'
-                          : 'text-gray-300 hover:bg-white/5 hover:text-white'
+                        ? 'bg-primary-500/15 text-primary-400 border border-primary-500/30'
+                        : 'text-gray-300 hover:bg-white/5 hover:text-white'
                         }`}
                     >
                       <span className="text-lg">{link.icon}</span>
@@ -203,8 +204,8 @@ const Navbar = () => {
               href={link.href}
               onClick={(e) => handleClick(e, link.href)}
               className={`flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-lg text-[10px] font-medium transition-all duration-300 ${activeSection === link.href.replace('#', '')
-                  ? 'text-primary-400'
-                  : 'text-gray-500 hover:text-gray-300'
+                ? 'text-primary-400'
+                : 'text-gray-500 hover:text-gray-300'
                 }`}
             >
               <span className="text-lg">{link.icon}</span>

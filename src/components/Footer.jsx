@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsArrowUp } from 'react-icons/bs'
 
@@ -9,10 +9,10 @@ const Footer = () => {
   }
 
   const socialLinks = [
-    { icon: <FaGithub size={18} />, href: 'https://github.com/mafaz-ts', label: 'GitHub' },
-    { icon: <FaLinkedinIn size={18} />, href: 'https://linkedin.com/in/mafaz-ts', label: 'LinkedIn' },
-    { icon: <HiOutlineMail size={18} />, href: 'mailto:mafaz@example.com', label: 'Email' },
-    { icon: <FaTwitter size={18} />, href: '#', label: 'Twitter' },
+    { icon: <FaGithub size={18} />, href: 'https://github.com/MAFAZ9416', label: 'GitHub' },
+    { icon: <FaLinkedinIn size={18} />, href: 'https://www.linkedin.com/in/mohammed-mafaz-t-s-778602376/', label: 'LinkedIn' },
+    { icon: <HiOutlineMail size={18} />, href: '#contact', label: 'Email' },
+    { icon: <FaInstagram size={20} />, href: 'https://www.instagram.com/_mafaz__7/', label: 'Instagram' },
   ]
 
   return (
