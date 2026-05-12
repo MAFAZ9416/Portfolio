@@ -19,10 +19,10 @@ const projects = [
   },
 
   {
-    title: 'Blog Platform',
+    title: 'Blog Application',
     description: 'A modern blog platform with authentication and markdown.',
     tags: ['Django', 'PostgreSQL', 'Tailwind'],
-    liveUrl: '#',
+    liveUrl: 'https://mafaz-blog.onrender.com',
     githubUrl: 'https://github.com/MAFAZ9416/Project-Blog.git',
     image: project2,
   },
