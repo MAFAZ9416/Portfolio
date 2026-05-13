@@ -52,7 +52,7 @@ function App() {
           </div>
 
           <p className="mt-6 text-lg font-display font-semibold text-gradient">
-            MOHAMMED MAFAZ
+            PORTFOLIO.
           </p>
 
         </div>
