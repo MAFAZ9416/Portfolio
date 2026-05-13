@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'E-Commerce API',
     description: 'Full-featured e-commerce backend with Django REST Framework.',
-    tags: ['Django', 'DRF', 'PostgreSQL'],
+    tags: ['DJANGO', 'DRF', 'POSTGRESQL', 'REACT'],
     liveUrl: 'https://tech-hub-blue-six.vercel.app/',
     githubUrl: 'https://github.com/MAFAZ9416/TechHub.git',
     image: project1,
@@ -21,7 +21,7 @@ const projects = [
   {
     title: 'Blog Application',
     description: 'A modern blog platform with authentication and markdown.',
-    tags: ['Django', 'PostgreSQL', 'Tailwind'],
+    tags: ['DJANGO', 'HTML', 'CSS', 'JS'],
     liveUrl: 'https://mafaz-blog.onrender.com',
     githubUrl: 'https://github.com/MAFAZ9416/Project-Blog.git',
     image: project2,
@@ -30,7 +30,7 @@ const projects = [
   {
     title: 'Student Dashboard',
     description: 'Modern student dashboard with responsive UI and backend integration.',
-    tags: ['React', 'Tailwind', 'Django'],
+    tags: ['REACT', 'SQLITE3', 'DJANGO'],
     liveUrl: ' https://student-dashboard-t84w.onrender.com',
     githubUrl: 'https://github.com/MAFAZ9416/Student-Dashboard.git',
     image: project3,
