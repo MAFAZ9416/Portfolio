@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import { FiDownload } from 'react-icons/fi'
 import { FaHome } from 'react-icons/fa'
@@ -18,6 +19,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
+  const navigate = useNavigate()
+  const location = useLocation()
+  const isSubPage = location.pathname !== '/'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,9 +47,17 @@ const Navbar = () => {
   const handleClick = (e, href) => {
     e.preventDefault()
     setIsOpen(false)
-    const el = document.querySelector(href)
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' })
+    if (isSubPage) {
+      // Navigate to home page and scroll to section after load
+      const sectionId = href.replace('#', '')
+      navigate('/')
+      setTimeout(() => {
+        const el = document.getElementById(sectionId)
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }, 300)
+    } else {
+      const el = document.querySelector(href)
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
     }
   }
 

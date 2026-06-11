@@ -171,6 +171,49 @@ const Hero = () => {
 
             </motion.div>
 
+            {/* Stats */}
+<motion.div
+  initial={{ opacity: 0, y: 25 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1 }}
+  className="grid grid-cols-3 gap-4 mt-8 mb-8 max-w-md mx-auto lg:mx-0"
+>
+  {[
+    { value: "2+", label: "Internships" },
+    { value: "5+", label: "Projects" },
+    { value: "10+", label: "Certificates" },
+  ].map((item) => (
+    <motion.div
+      key={item.label}
+      whileHover={{
+        y: -6,
+        scale: 1.05,
+      }}
+      className="
+      bg-white/5
+      backdrop-blur-xl
+      border
+      border-purple-500/20
+      rounded-2xl
+      p-4
+      text-center
+      shadow-lg
+      hover:shadow-purple-500/30
+      transition-all
+      duration-300
+    "
+    >
+      <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+        {item.value}
+      </h3>
+
+      <p className="text-sm text-gray-400 mt-1">
+        {item.label}
+      </p>
+    </motion.div>
+  ))}
+</motion.div>
+
             {/* Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 25 }}
