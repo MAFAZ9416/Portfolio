@@ -192,7 +192,8 @@ const Navbar = () => {
                 </div>
 
                 <motion.a
-                  href="#"
+                  href={resume}
+                  download="Mohammed_Mafaz_CV.pdf"
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.5 }}
