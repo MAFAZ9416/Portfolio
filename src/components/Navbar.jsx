@@ -5,7 +5,7 @@ import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import { FiDownload } from 'react-icons/fi'
 import { FaHome } from 'react-icons/fa'
 import { BsPerson, BsCodeSlash, BsFolder, BsEnvelope } from 'react-icons/bs'
-import resume from '../assets/resume.pdf'
+import resume from '../assets/Resume.pdf'
 
 const navLinks = [
   { name: 'Home', href: '#home', icon: <FaHome /> },
