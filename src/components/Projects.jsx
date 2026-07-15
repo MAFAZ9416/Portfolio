@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { FaPlay, FaGithub } from 'react-icons/fa'
+import { FaPlay, FaGithub, FaProductHunt } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 
 import project1 from "../assets/project1.png"
@@ -8,6 +8,7 @@ import project2 from "../assets/project2.png"
 import project3 from "../assets/project3.png"
 import project4 from "../assets/project4.png"
 import project5 from "../assets/project5.png"
+import project6 from "../assets/project6.png"
 
 export const projects = [
   {
@@ -64,7 +65,30 @@ export const projects = [
     liveUrl: 'https://novaai-lake.vercel.app/register',
     githubUrl: 'https://github.com/MAFAZ9416/Internship.git',
     image: project5,
-},
+  },
+  {
+    id: 6,
+    title: "Progressly",
+    description:
+      "A modern SaaS productivity platform designed to help students and developers track skills, manage projects, monitor learning progress, earn achievements, organize daily tasks, and visualize personal growth through an intuitive dashboard.",
+    tags: [
+      "React",
+      "Cloudinary",
+      "Google OAuth",
+      "Django",
+      "Product Hunt",
+      "PostgreSQL (Neon)",
+      "JWT",
+      "REST API",
+      "SaaS",
+      "Productivity"
+    ],
+    liveUrl: "https://progressly-taupe.vercel.app/login/",
+    apkUrl: "/downloads/progressly.apk",
+    productHuntUrl: "https://www.producthunt.com/products/progressly-2?utm_source=other&utm_medium=social",
+    image: project6,
+    featured: true,
+  },
 ]
 
 /* ─── Traveling Border Card ─────────────────────────────────────────────── */
@@ -90,6 +114,12 @@ export const ProjectCard = ({ project }) => (
           className="project-card-img"
           loading="lazy"
         />
+        {/* Featured Badge */}
+        {project.featured && (
+          <div className="project-featured-badge">
+            ⭐ Featured SaaS
+          </div>
+        )}
       </div>
 
       {/* Content */}
@@ -118,17 +148,33 @@ export const ProjectCard = ({ project }) => (
             Live Demo
           </motion.a>
 
-          <motion.a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.97 }}
-            className="btn-code"
-          >
-            <FaGithub size={14} />
-            Code
-          </motion.a>
+          {project.productHuntUrl ? (
+            <motion.a
+              href={project.productHuntUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.97 }}
+              className="btn-code btn-producthunt"
+              title="See Progressly on Product Hunt"
+              aria-label="View Progressly on Product Hunt"
+            >
+              <FaProductHunt size={14} />
+              View on Product Hunt
+            </motion.a>
+          ) : (
+            <motion.a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              className="btn-code"
+            >
+              <FaGithub size={14} />
+              Code
+            </motion.a>
+          )}
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import { initPWAInstall } from './utils/pwaInstall'
 
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -64,6 +65,9 @@ const HomePage = () => {
 
 /* ─── App ────────────────────────────────────────────────────────────────── */
 function App() {
+  // Capture beforeinstallprompt as early as possible
+  useEffect(() => { initPWAInstall() }, [])
+
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
