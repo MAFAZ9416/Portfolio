@@ -180,7 +180,7 @@ const Hero = () => {
 >
   {[
     { value: "2+", label: "Internships" },
-    { value: "5+", label: "Projects" },
+    { value: "7+", label: "Projects" },
     { value: "10+", label: "Certificates" },
   ].map((item) => (
     <motion.div

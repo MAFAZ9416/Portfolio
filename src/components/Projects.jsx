@@ -9,6 +9,7 @@ import project3 from "../assets/project3.png"
 import project4 from "../assets/project4.png"
 import project5 from "../assets/project5.png"
 import project6 from "../assets/project6.png"
+import project7 from "../assets/project7.png"
 
 export const projects = [
   {
@@ -88,6 +89,25 @@ export const projects = [
     productHuntUrl: "https://www.producthunt.com/products/progressly-2?utm_source=other&utm_medium=social",
     image: project6,
     featured: true,
+  },
+  {
+    id: 7,
+    title: 'Lumora – LinkedIn Personal Branding & Growth Agency',
+    description: 'A specialized agency focused on helping professionals build their personal brand and grow their LinkedIn presence through strategic content creation and optimization.',
+    tags: [
+    'LinkedIn Growth',
+    'Personal Branding',
+    'Content Strategy',
+    'Profile Optimization',
+    'Lead Generation',
+    'Authority Building',
+    'Social Media Growth',
+    'Brand Positioning',
+    'Consulting'
+  ],
+    liveUrl: 'https://lumora-five-nu.vercel.app/',
+    githubUrl: 'https://github.com/MAFAZ9416/Lumora',
+    image: project7,
   },
 ]
 
