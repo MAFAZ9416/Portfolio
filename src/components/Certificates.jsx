@@ -276,7 +276,7 @@ export const CertificateModal = ({ cert, isOpen, onClose }) => {
               <div className="w-full flex justify-center bg-[#0b0620] rounded-t-3xl overflow-hidden">
                 <img
                     src={cert.image}
-                    alt={cert.title}
+                    alt={`${cert.title} certificate`}
                     className="w-full h-auto object-contain"
                 />
                 </div>
@@ -364,9 +364,10 @@ export const CertificateCard = ({ cert, onClick }) => (
         <div className="cert-card-image-overlay" />
         <img
           src={cert.image}
-          alt={cert.title}
+          alt={`${cert.title} certificate`}
           className="cert-card-img"
           loading="lazy"
+          decoding="async"
         />
       </div>
 

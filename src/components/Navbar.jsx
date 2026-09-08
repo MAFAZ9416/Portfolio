@@ -82,6 +82,7 @@ const Navbar = () => {
               className="text-2xl md:text-3xl font-display font-bold text-gradient-purple"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              aria-label="Go to home"
             >
               M.
             </motion.a>

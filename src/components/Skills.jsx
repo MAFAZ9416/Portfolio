@@ -3,8 +3,6 @@ import { motion, useInView } from 'framer-motion'
 
 import {
   FaPython,
-  FaDocker,
-  FaGitAlt,
   FaHtml5,
   FaCss3Alt,
   FaJs,

@@ -29,7 +29,7 @@ const About = () => {
     {
       icon: <FaUser />,
       label: 'Name',
-      value: 'MOHAMMED MAFAZ T.S'
+        value: 'Mohammed Mafaz T S'
     },
     {
       icon: <FaBriefcase />,
@@ -94,7 +94,7 @@ const About = () => {
 
             <p className="text-gray-300 text-lg leading-relaxed mb-10">
 
-              I'm a{" "}
+              I&apos;m a{" "}
 
               <span className="text-purple-400 font-semibold">
                 Backend Developer
@@ -153,7 +153,7 @@ const About = () => {
               className="inline-flex items-center gap-2 px-7 py-4 rounded-2xl bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold"
             >
 
-              Let's Connect
+              Let&apos;s Connect
 
               <BsArrowRight />
 
@@ -212,7 +212,7 @@ const About = () => {
 
                 <img
                   src={profileImg}
-                  alt="Mafaz"
+                  alt="Mohammed Mafaz T S"
                   className="w-full h-full object-cover"
                 />
 

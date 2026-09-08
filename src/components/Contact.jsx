@@ -38,7 +38,7 @@ const Contact = () => {
 
       })
 
-      .catch((error) => {
+      .catch((_error) => {
 
         setLoading(false)
 
@@ -82,13 +82,13 @@ const Contact = () => {
 
             <h3 className="text-3xl font-bold text-white mb-6">
 
-              Let's Work Together 🚀
+              Let&apos;s Work Together 🚀
 
             </h3>
 
             <p className="text-gray-400 leading-relaxed mb-10">
 
-              I'm open to internships, freelance work,
+              I&apos;m open to internships, freelance work,
               backend development projects, and collaborations.
 
             </p>
@@ -154,6 +154,7 @@ const Contact = () => {
               name="user_name"
               placeholder="Your Name"
               required
+              aria-label="Your name"
 
               className="w-full mb-5 px-5 py-4 rounded-2xl bg-[#111827] border border-white/10 text-white outline-none focus:border-purple-500"
             />
@@ -164,6 +165,7 @@ const Contact = () => {
               name="user_email"
               placeholder="Your Email"
               required
+              aria-label="Your email"
 
               className="w-full mb-5 px-5 py-4 rounded-2xl bg-[#111827] border border-white/10 text-white outline-none focus:border-purple-500"
             />
@@ -174,6 +176,7 @@ const Contact = () => {
               rows="6"
               placeholder="Your Message"
               required
+              aria-label="Your message"
 
               className="w-full mb-5 px-5 py-4 rounded-2xl bg-[#111827] border border-white/10 text-white outline-none focus:border-purple-500 resize-none"
             />

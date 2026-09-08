@@ -130,9 +130,10 @@ export const ProjectCard = ({ project }) => (
         <div className="project-card-image-overlay" />
         <img
           src={project.image}
-          alt={project.title}
+          alt={`${project.title} project screenshot`}
           className="project-card-img"
           loading="lazy"
+          decoding="async"
         />
         {/* Featured Badge */}
         {project.featured && (

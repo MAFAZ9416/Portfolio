@@ -39,6 +39,8 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={social.label}
+                  title={social.label}
                   className="text-gray-400 hover:text-primary-400 transition-colors"
                 >
                   {social.icon}
@@ -49,7 +51,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-gray-500 text-center">
-            © {new Date().getFullYear()} Mafaz. All rights reserved.
+            © {new Date().getFullYear()} Mohammed Mafaz T S. All rights reserved.
           </p>
 
           {/* Scroll to top */}

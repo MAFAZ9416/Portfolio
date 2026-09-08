@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mafaz-portfolio-gold.vercel.app/sitemap.xml

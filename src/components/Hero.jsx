@@ -81,10 +81,10 @@ const Hero = () => {
               className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6"
             >
 
-              Hi, I'm{" "}
+              Hi, I&apos;m{" "}
 
               <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(168,85,247,0.8)]">
-                Mafaz
+                Mohammed Mafaz T S
               </span>
 
               <br />
@@ -152,6 +152,10 @@ const Hero = () => {
                     ? "noopener noreferrer"
                     : undefined
                   }
+
+                  aria-label={social.label}
+
+                  title={social.label}
 
                   whileHover={{
                     y: -5,
@@ -313,7 +317,7 @@ const Hero = () => {
             {/* Coder Image */}
             <img
               src={coderImg}
-              alt="Coder Illustration"
+              alt="Backend developer illustration"
               className="relative z-10 w-[300px] sm:w-[400px] md:w-[520px] lg:w-[620px] object-contain animate-float"
             />
 

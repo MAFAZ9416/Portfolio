@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { initPWAInstall } from './utils/pwaInstall'
+import Seo from './components/Seo'
 
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -69,11 +70,14 @@ function App() {
   useEffect(() => { initPWAInstall() }, [])
 
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/projects" element={<ProjectsPage />} />
-      <Route path="/certificates" element={<CertificatesPage />} />
-    </Routes>
+    <>
+      <Seo />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/certificates" element={<CertificatesPage />} />
+      </Routes>
+    </>
   )
 }
 
