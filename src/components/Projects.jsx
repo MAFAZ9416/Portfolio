@@ -10,6 +10,7 @@ import project4 from "../assets/project4.png"
 import project5 from "../assets/project5.png"
 import project6 from "../assets/project6.png"
 import project7 from "../assets/project7.png"
+import project8 from "../assets/project8.png"
 
 export const projects = [
   {
@@ -53,15 +54,15 @@ export const projects = [
     title: 'Nova AI - Intelligent Conversational Assistant',
     description: 'Developed a production-ready AI chat platform with secure user authentication, real-time AI conversations, file analysis capabilities, chat history tracking, and responsive modern UI. Integrated OAuth login systems, REST APIs, and scalable backend services to deliver a seamless user experience.',
     tags: [
-        'React',
-        'Django',
-        'DRF',
-        'PostgreSQL',
-        'JWT',
-        'OAuth',
-        'AI Chatbot',
-        'REST API',
-        'Full Stack'
+      'React',
+      'Django',
+      'DRF',
+      'PostgreSQL',
+      'JWT',
+      'OAuth',
+      'AI Chatbot',
+      'REST API',
+      'Full Stack'
     ],
     liveUrl: 'https://novaai-lake.vercel.app/register',
     githubUrl: 'https://github.com/MAFAZ9416/Internship.git',
@@ -95,19 +96,38 @@ export const projects = [
     title: 'Lumora – LinkedIn Personal Branding & Growth Agency',
     description: 'A specialized agency focused on helping professionals build their personal brand and grow their LinkedIn presence through strategic content creation and optimization.',
     tags: [
-    'LinkedIn Growth',
-    'Personal Branding',
-    'Content Strategy',
-    'Profile Optimization',
-    'Lead Generation',
-    'Authority Building',
-    'Social Media Growth',
-    'Brand Positioning',
-    'Consulting'
-  ],
+      'LinkedIn Growth',
+      'Personal Branding',
+      'Content Strategy',
+      'Profile Optimization',
+      'Lead Generation',
+      'Authority Building',
+      'Social Media Growth',
+      'Brand Positioning',
+      'Consulting'
+    ],
     liveUrl: 'https://lumora-five-nu.vercel.app/',
     githubUrl: 'https://github.com/MAFAZ9416/Lumora',
     image: project7,
+  },
+  {
+    id: 8,
+    title: 'VELTO Conversion – Free Online File Converter',
+    description: 'A fast and easy-to-use online file conversion platform for converting PDF, Word, Excel, PowerPoint, images and other file formats with a simple and modern user experience.',
+    tags: [
+      'File Converter',
+      'PDF Converter',
+      'Document Conversion',
+      'PDF to Word',
+      'Word to PDF',
+      'Image Conversion',
+      'Online Converter',
+      'File Conversion',
+      'Productivity Tool'
+    ],
+    liveUrl: 'https://velto-brown.vercel.app/',
+    githubUrl: 'https://github.com/MAFAZ9416/velto',
+    image: project8,
   },
 ]
 
